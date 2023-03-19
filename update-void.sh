@@ -20,6 +20,9 @@ sleep6
 #echo "Instalação suporte ao flatpak"
 #sudo xbps-install -S flatpak && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #sleep6
+echo "Alterando o shell"
+chsh -s /bin/zsh
+sleep6
 echo "Instalando oh my zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
