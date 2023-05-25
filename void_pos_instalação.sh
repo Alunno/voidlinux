@@ -57,6 +57,8 @@ while read -r p ; do sudo xbps-install -y $p ; done < <(cat << "EOF"
 	youtube-dl
 	python3-pip
 	lightdm
+	light-locker
+	lightdm-webkit-greeter
 	budgie-desktop
 	budgie-control-center
 	budgie-desktop-view
