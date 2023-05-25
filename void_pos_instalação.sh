@@ -56,10 +56,11 @@ while read -r p ; do sudo xbps-install -y $p ; done < <(cat << "EOF"
 	yt-dlp
 	youtube-dl
 	python3-pip
-	gdm
-	gnome
-	gnome-browser-connector
-	gnome-connections
+	lightdm
+	budgie-desktop
+	budgie-control-center
+	budgie-desktop-view
+	budgie-screensaver
 	fragments
 	NetworkManager
 	NetworkManager-openvpn
