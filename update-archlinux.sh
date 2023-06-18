@@ -1,22 +1,22 @@
 #!/bin/bash
-# Instalação de complementos no archlinux #
+echo -=-=-=-Instalação de complementos no archlinux -=-=-=-
 sleep 6
-# Instalação de pacotes de modulos #
+echo -=-=-=-Instalação de pacotes adicionais e modulos initcpio -=-=-=-
 sleep 3
-yay -S pamac build mkinitcpio-firmware conky-lua-nv lsb-release zsh gnome-browser-connector
-# Alteração do shell para o zsh #
+yay -S pamac build mkinitcpio-firmware conky-lua-nv lsb-release zsh gnome-browser-connector aspell-pt pamac-aur fragments testdisk
+echo -=-=-=-Alteração do shell-=-=-=-
 sleep 3
 chsh -s /bin/zsh
-# Instalação de pacotes de oh-my-zsh #
+echo -=-=-=-Instalação do pacote oh-my-zsh-=-=-=-
 sleep 3
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# Instalação de plugins oh-my-zsh #
+echo -=-=-=-Instalação de plugins zsh-=-=-=- 
 sleep 3
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-# Instalação efetuado com exito!!! #
+echo -=-=-=-Instalação de complementos instalado com sucesso...-=-=-=-
 sleep 3
-# Aproveite a instalação... #
+echo -=-=-=-Aproveita a instalação-=-=-=-
+pause
 exit
-
